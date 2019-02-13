@@ -13,7 +13,7 @@
  * Time: 16:44
  */
 
-    echo "Hello World";
+    echo "hello world";
 
 ?>
 
