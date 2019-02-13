@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 
 <head>
@@ -31,4 +32,33 @@
  * User: YoungB
  * Date: 2/13/2019
  * Time: 4:51 PM
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: shehabibrahim
+ * Date: 2019-02-13
+ * Time: 16:44
+ */
+
+    echo "Hello World";
+
+?>
+
+</body>
+</html>
+
+/**
+ * Created by PhpStorm.
+ * User: shehabibrahim
+ * Date: 2019-02-13
+ * Time: 16:44
+>>>>>>> origin/master
  */
