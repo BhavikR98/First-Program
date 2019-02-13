@@ -12,9 +12,7 @@
  * Date: 2019-02-13
  * Time: 16:44
  */
-
     echo "hello world";
-
 ?>
 
 </body>
