@@ -2,10 +2,10 @@
 
 
 #Index of PHP Terms
-<Start of the index for PHP terms for group reference>
+<!--Start of the index for PHP terms for group reference>
 <The format we'll be using will be dictionary style. 
 You have the term, then you add ":", then add an example 
-of the termand the definition of the term>
+of the termand the definition of the term-->
 
 
 <Many credits given to http://php.net/manual>
