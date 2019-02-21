@@ -1,6 +1,3 @@
-# First-Program
-
-
 ##Index of PHP Terms
 
 <!--Start of the index for PHP terms for group reference>
