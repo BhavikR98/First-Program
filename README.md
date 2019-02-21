@@ -64,6 +64,17 @@ has a constructor defined that throws an exception on
 error. Classes should be defined before instantiation (
 and in some cases this is a requirement).
 
+**return**: (**return** -3;) return returns program 
+control to the calling module. Execution resumes at 
+the expression following the called module's invocation. 
+If called from within a function, the return statement 
+immediately ends execution of the current function, 
+and returns its argument as the value of the function 
+call. return also ends the execution of an eval() 
+statement or script file.(http://php.net/manual/en/function.return.php)
+                             
+**echo**:(**echo** "Hello World";) Outputs one or more strings
+
 **abstract**: (**abstract** class Car) Classes defined 
 as abstract may not be instantiated(represent as or 
 by an instance) and any class that contains at least 
