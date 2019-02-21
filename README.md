@@ -23,13 +23,13 @@ Unit Testing is essentially a way developers test small chunks
 of their code in bits to avoid global errors when using the code
 across different projects.  
 
-**Type Declarations**: [(declare(strict_types=1);] Type 
+**Type Declarations**: [(**declare**(strict_types=1);] Type 
 declarations come in two flavours: coercive (default) 
 and strict. The following types for parameters can be 
 used: strings (string), integers (int), floating-point 
 numbers (float), and booleans (bool).
 
-**use**: (use Car;) imports the specified namespace 
+**use**: (**use** Car;) imports the specified namespace 
 (or class) to the current scope. 
 
 **extends**: (final class CarTest **extends** TestCase) 
@@ -47,6 +47,34 @@ visible in its own class only.
 scope when you want to make your variable/function visible 
 in all classes that extend current class including the 
 parent class.
+
+**Creating a new Variable**: (**$txt = "5";**) $txt will hold the 
+of whatever you initialize for it after typing and "=". 
+Can be a string, int, float, and class.
+
+**$this**: (**$this**->assertInstanceOf(Volvo ::class, $car);) 
+mainly used to refer properties of a class. It is the 
+way to reference an instance of a class from within 
+itself, the same as many other object oriented languages.
+
+**new**: ($volvo = **new** Volvo();) To create an instance 
+of a class, the new keyword must be used. 
+An object will always be created unless the object 
+has a constructor defined that throws an exception on 
+error. Classes should be defined before instantiation (
+and in some cases this is a requirement).
+
+**abstract**: (**abstract** class Car) Classes defined 
+as abstract may not be instantiated(represent as or 
+by an instance) and any class that contains at least 
+one abstract method must also be abstract. Methods 
+defined as abstract simply declare the method's 
+signature - they cannot define the implementation.
+                                 
+
+  
+
+ 
 
 
          
