@@ -7,9 +7,10 @@
 You have the term, then you add ":", then add an example 
 of the termand the definition of the term>
 
+
 <Many credits given to http://php.net/manual>
 
-####There will be direct examples of in class assignments. Currently only the CarTest worked in class
+There will be direct examples of in class assignments. Currently only the CarTest worked in class
 
 **PHP Start Tag**: (<?php) Starts the PHP file and tells 
 the computer to start and stop interpreting the code.
