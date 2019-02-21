@@ -1,7 +1,8 @@
 # First-Program
 
 
-#Index of PHP Terms
+##Index of PHP Terms
+
 <!--Start of the index for PHP terms for group reference>
 <The format we'll be using will be dictionary style. 
 You have the term, then you add ":", then add an example 
