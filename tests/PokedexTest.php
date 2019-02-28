@@ -11,6 +11,12 @@ final class PokedexTest extends TestCase
     public function testCSVFileExists() {
         $this->assertFileExists('/data/pokemon.csv');
     }
+    public function testSRCDirectory(){
+        $this->assertDirectoryExists('src');
+    }
+    public function testTestDirectory(){
+        $this->assertDirectoryExists('tests');
+    }
     public function testFileObject() {
         $this->assertInstanceOf(Pokedex::class, new Pokedex());
     }
