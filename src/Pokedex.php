@@ -22,8 +22,7 @@ class Pokedex
             fclose($door);
         }
 
-        return $items;
+        echo $items;
     }
-
 
 }
