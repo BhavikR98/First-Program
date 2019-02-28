@@ -20,10 +20,10 @@ final class PokedexTest extends TestCase
     public function testTestDirectory(){
         $this->assertDirectoryExists('tests');
     }
-    public function testSRCDirectoryisReadable(){
+    public function testDataDirectoryIsReadable(){
         $this->assertDirectoryisReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/data');
     }
-    public function testSRCDirectoryisReadable(){
+    public function testSRCDirectoryIsReadable(){
         $this->assertDirectoryisReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/src');
     }
     public function testTestDirectoryisReadable(){
