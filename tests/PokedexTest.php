@@ -12,7 +12,7 @@ final class PokedexTest extends TestCase
         $this->assertFileExists('/data/pokemon.csv');
     }
     public function testreadPokedextoTableworks() {
-        $this->assertClassHasAttribute(Pokedex::class, 'readCSVtoArray');
+        $this->assertClassHasAttribute(Pokedex::class, new Pokedex());
     }
     public function testSRCDirectory(){
         $this->assertDirectoryExists('src');
