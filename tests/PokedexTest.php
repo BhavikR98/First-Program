@@ -34,8 +34,7 @@ final class PokedexTest extends TestCase
     }
     public function testReadCSVtoArrayExists() {
         $this->assertTrue(
-            method_exists(Pokedex::class, 'readCSVtoArray')
-        );
+            method_exists(Pokedex::class, 'readCSVtoArray'));
     }
     public function testReadCSVtoArray() {
         $records = Pokedex::readCSVtoArray("data/pokemon.csv",'Pokemon');
