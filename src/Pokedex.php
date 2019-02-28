@@ -3,21 +3,21 @@
 class Pokedex
 {
 
-    public static function readCSVtoArray(String $filename, String $class):array
+    public static function readPokedextoTable(String $filename, String $class):array
     {
         $things = Array();
-        $count = 0;
-        $fieldNames = '';
+        $pokemonNames = '';
+        $num = 0;
 
         if (($door = fopen($filename, "r")) !== FALSE) {
-            while (($row = fgetcsv($door, 150, ",")) !== FALSE) {
+            while (($line = fgetcsv($door, 150, ",")) !== FALSE) {
 
-                if($count == 0) {
-                    $fieldNames = $row;
+                if($num == 0) {
+                    $pokemonNames = $line;
                 } else {
-                    $things[] = (object) array_combine($fieldNames, $row);
+                    $things[] = (object) array_combine($pokemonNames, $line);
                 }
-                $count++;
+                $num++;
             }
             fclose($door);
         }
