@@ -5,7 +5,7 @@ class Pokedex
 
     public static function readPokedextoTable(String $filename, String $class):array
     {
-        $things = Array();
+        $items = Array();
         $pokemonNames = '';
         $num = 0;
 
@@ -15,14 +15,14 @@ class Pokedex
                 if($num == 0) {
                     $pokemonNames = $line;
                 } else {
-                    $things[] = (object) array_combine($pokemonNames, $line);
+                    $items[] = (object) array_combine($pokemonNames, $line);
                 }
                 $num++;
             }
             fclose($door);
         }
 
-        return $things;
+        return $items;
     }
 
 
