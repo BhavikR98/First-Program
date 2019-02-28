@@ -11,11 +11,23 @@ final class PokedexTest extends TestCase
     public function testCSVFileExists() {
         $this->assertFileExists('/data/pokemon.csv');
     }
+    public function testreadPokedextoTableworks() {
+        $this->assertClassHasAttribute(Pokedex::class, 'readCSVtoArray');
+    }
     public function testSRCDirectory(){
         $this->assertDirectoryExists('src');
     }
     public function testTestDirectory(){
         $this->assertDirectoryExists('tests');
+    }
+    public function testSRCDirectoryisReadable(){
+        $this->assertDirectoryisReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/data');
+    }
+    public function testSRCDirectoryisReadable(){
+        $this->assertDirectoryisReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/src');
+    }
+    public function testTestDirectoryisReadable(){
+        $this->assertDirectoryisReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/tests');
     }
     public function testFileObject() {
         $this->assertInstanceOf(Pokedex::class, new Pokedex());
@@ -30,3 +42,4 @@ final class PokedexTest extends TestCase
         print_r($records);
     }
 }
+
