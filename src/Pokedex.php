@@ -11,7 +11,6 @@ class Pokedex
 
         if (($door = fopen($filename, "r")) !== FALSE) {
             while (($line = fgetcsv($door, 150, ",")) !== FALSE) {
-
                 if($num == 0) {
                     $pokemonNames = $line;
                 } else {
