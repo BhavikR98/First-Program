@@ -18,7 +18,7 @@ class takeCSV
             if($num == 0) {
                 $fieldNames = $record;
             } else {
-                $records[] = recordFactory::create($fieldNames, $record);
+                $records[] = Factory::create($fieldNames, $record);
             }
             $num++;
         }

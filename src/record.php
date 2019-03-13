@@ -7,7 +7,7 @@
  */
 use takeCSV;
 use setUpWeb;
-use recordFactory;
+use Factory;
 use Pokedex;
 class record {
     public function __construct(Array $fieldNames = null, $values = null )

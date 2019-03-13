@@ -1,7 +1,7 @@
 <?php
 use takeCSV;
 use setUpWeb;
-use recordFactory;
+use Factory;
 use record;
 class Pokedex
 {
