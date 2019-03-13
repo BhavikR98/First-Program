@@ -5,7 +5,10 @@
  * Date: 2019-03-13
  * Time: 16:56
  */
-
+use takeCSV;
+use setUpWeb;
+use recordFactory;
+use Pokedex;
 class record {
     public function __construct(Array $fieldNames = null, $values = null )
     {
@@ -15,10 +18,10 @@ class record {
         }
     }
     public function returnArray() {
-        $array = (array) $this;
-        return $array;
+        $items = (array) $this;
+        return $items;
     }
-    public function createProperty($name = 'one', $value = 'Gucci Strawberry Print') {
+    public function createProperty($name = 'one', $value = 'Number Pokemon Type') {
         $this->{$name} = $value;
     }
 }

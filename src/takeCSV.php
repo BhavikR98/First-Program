@@ -9,20 +9,20 @@
 class takeCSV
 {
     static public function getRecords($filename) {
-        $file = fopen($filename,"r");
+        $Pokedex = fopen($filename,"r");
         $fieldNames = array();
-        $count = 0;
-        while(! feof($file))
+        $num = 0;
+        while(! feof($Pokedex))
         {
-            $record = fgetcsv($file);
-            if($count == 0) {
+            $record = fgetcsv($Pokedex);
+            if($num == 0) {
                 $fieldNames = $record;
             } else {
                 $records[] = recordFactory::create($fieldNames, $record);
             }
-            $count++;
+            $num++;
         }
-        fclose($file);
+        fclose($Pokedex);
         return $records;
     }
 }
