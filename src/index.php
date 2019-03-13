@@ -12,15 +12,18 @@
     <title>Title</title>
 </head>
 <body>
-<table class="table table-dark">
-    <thead>
+<div class="table-responsive-sm">
+    <table class="table">
         <?php
-         include("Pokedex.php");
-         Pokedex::start("../data/pokemon.csv");
+        include("Pokedex.php");
+        Pokedex::start("../data/pokemon.csv");
         ?>
-    </thead>
-</table>
+    </table>
+</div>
 
 </body>
 </html>
+
+
+
 
