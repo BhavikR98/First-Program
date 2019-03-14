@@ -10,8 +10,8 @@ use setUpWeb;
 use Pokedex;
 use record;
 class Factory {
-    public static function create(Array $fieldNames = null, Array $values = null) {
-        $record = new record($fieldNames, $values);
+    public static function create(Array $Pokemon = null, Array $values = null) {
+        $record = new record($Pokemon, $values);
         return $record;
     }
 }

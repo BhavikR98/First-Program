@@ -10,15 +10,15 @@ class takeCSV
 {
     static public function getRecords($filename) {
         $Pokedex = fopen($filename,"r");
-        $fieldNames = array();
+        $Pokemon = array();
         $num = 0;
         while(! feof($Pokedex))
         {
             $record = fgetcsv($Pokedex);
             if($num == 0) {
-                $fieldNames = $record;
+                $Pokemon = $record;
             } else {
-                $records[] = Factory::create($fieldNames, $record);
+                $records[] = Factory::create($Pokemon, $record);
             }
             $num++;
         }

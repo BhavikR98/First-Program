@@ -10,9 +10,9 @@ use setUpWeb;
 use Factory;
 use Pokedex;
 class record {
-    public function __construct(Array $fieldNames = null, $values = null )
+    public function __construct(Array $Pokemon = null, $values = null )
     {
-        $record = array_combine($fieldNames, $values);
+        $record = array_combine($Pokemon, $values);
         foreach ($record as $property => $value) {
             $this->createProperty($property, $value);
         }
@@ -21,8 +21,8 @@ class record {
         $items = (array) $this;
         return $items;
     }
-    public function createProperty($name = 'one', $value = 'Number Pokemon Type') {
-        $this->{$name} = $value;
+    public function createProperty($pokemonName = 'one', $row = 'Number Pokemon Type') {
+        $this->{$pokemonName} = $row;
     }
 }
 
