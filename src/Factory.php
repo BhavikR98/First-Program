@@ -15,3 +15,4 @@ class Factory {
         return $record;
     }
 }
+
