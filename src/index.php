@@ -1,10 +1,3 @@
-
-/**
- * Created by PhpStorm.
- * User: shehabibrahim
- * Date: 2019-03-13
- * Time: 18:20
- */
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,20 +26,6 @@
     </table>
 </div>
 </body>
-
-<?php
-/*echo "<html><body><table>\n\n";
-$f = fopen("../data/pokemon.csv", "r");
-while (($line = fgetcsv($f)) !== false) {
-        echo "<tr>";
-        foreach ($line as $cell) {
-                echo "<td>" . htmlspecialchars($cell) . "</td>";
-        }
-        echo "</tr>\n";
-}
-fclose($f);
-echo "\n</table></body></html>";*/
-?>
 
 </body>
 </html>
