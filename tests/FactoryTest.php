@@ -12,5 +12,8 @@ final class FactoryTest extends TestCase
     {
         $this->assertFileIsReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/src/Factory.php');
     }
+    public function testFileObject() {
+        $this->assertInstanceOf(Factory::create(), new Factory());
+    }
 
 }

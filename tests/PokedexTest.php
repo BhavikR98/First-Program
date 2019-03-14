@@ -30,11 +30,11 @@ final class PokedexTest extends TestCase
         $this->assertDirectoryisReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/tests');
     }
     public function testFileObject() {
-        $this->assertInstanceOf(Pokedex::class, new Pokedex());
+        $this->assertInstanceOf(Pokedex::start(), new Pokedex());
     }
     public function testReadCSVtoArrayExists() {
         $this->assertTrue(
-            method_exists(Pokedex::class, 'readCSVtoArray'));
+            method_exists(Pokedex::start(), 'readCSVtoArray'));
     }
     public function testReadCSVtoArray() {
         $records = Pokedex::readCSVtoArray("data/pokemon.csv",'Pokemon');

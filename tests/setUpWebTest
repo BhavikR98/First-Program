@@ -12,5 +12,9 @@ final class setUpWebTest extends TestCase
     {
         $this->assertFileIsReadable('/Users/shehabibrahim/PhpstormProjects/TheFirstProgram/src/setUpWeb.php');
     }
+    public function testFileObject()
+    {
+        $this->assertInstanceOf(setUpWeb::setUp(), new setUpWeb());
+    }
 
 }
